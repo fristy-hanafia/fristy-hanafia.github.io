@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #121313;
+            justify-content: space-between;
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 16px 32px
+        }
+
+        .nav-list {
+            display: flex;
+            /* kunci utama: ubah list jadi horizontal */
+            list-style: none;
+            gap: 24px;
+            padding: 16px 32px;
+        }
+
+        .nav-list>li>a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .nav-list a:hover {
+            color: #4A90E2;
+        }
+
+         /* Dropdown wrapper */
+        .dropdown {
+            position: relative;
+            /* jadi acuan posisi untuk dropdown-menu */
+        }
+
+         /* Menu dropdown, awalnya disembunyikan */
+        .dropdown-menu {
+            display: none;
+            flex-direction: column;
+            /* item dropdown disusun ke bawah */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            list-style: none;
+            min-width: 180px;
+            padding: 8px 0;
+        }
+
+        .dropdown-menu li a {
+            color: white;
+            text-decoration: none;
+            font-family: sans-serif;
+            padding: 10px 16px;
+            display: block;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: #4A90E2;
+        }
+
+        /* Munculkan dropdown saat hover */
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+            <a href="#">Services ▾</a>
+            <ul class="dropdown-menu">
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">SEO</a></li>
+        </ul>
+         </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+        <img src="https://i.pinimg.com/1200x/16/2d/29/162d2933bb643ec2f48e0238ea1e188a.jpg" alt="Logo" width="80px" height="50px">
+    </nav>
+</body>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</html>
+
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 24px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            /* kunci utama: item boleh turun baris */
+            gap: 12px;
+        }
+
+        .gallery img {
+            width: 220px;
+            /* lebar tetap tiap gambar */
+            height: 300px;
+            object-fit: fill;
+            /* gambar tidak gepeng saat dipotong */
+            border-radius: 6px;
+        }
+
+        .foto {
+            background-color: rgb(14, 233, 185);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galeri Foto</h1>
+    <div class="gallery">
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/bd/cc/be/bdccbed1abe3c8abc0199b7c2a3e08c8.jpg" alt="Foto 1">
+        <p>Rate: 9/10</p>
+    </div>
+
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/59/73/a3/5973a3e0c1682c574f7010478742d1ee.jpg" alt="Foto 2">
+        <p>Rate: 8.7/10</p>
+    </div>
+
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/1b/47/85/1b4785266184e17b5d35362a3d98e37d.jpg" alt="Foto 3">
+        <p>Rate: 8/10</p>
+    </div>
+
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/f8/e0/90/f8e0903c46f51d4d90d51c85a3bb18eb.jpg" alt="Foto 4">
+        <p>Rate: 7/10</p>
+    </div>
+
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/e0/64/1a/e0641a91a9916b9f30abb2afb2111f0c.jpg" alt="Foto 5">
+        <p>Rate: 9.5/10</p>
+    </div>
+
+    <div class="foto">
+        <img src="https://i.pinimg.com/736x/23/6d/51/236d51f4e3720f50a0877ef5134d5317.jpg" alt="Foto 6">
+        <p>Rate: 10/10</p>
+    </div>
+</div>
+</body>
+
+</html>
